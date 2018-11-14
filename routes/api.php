@@ -38,6 +38,8 @@ Route::resource('sells','SellsController',['only'=>['index','store','show',
 Route::put('sells','SellsController@update');
 
 //actualización de cantidades de productos
+//Route::resource('stocks','StocksController',['only'=>['destroy']]);
 Route::put('stocks','StocksController@update');
+Route::put('stocks','StocksController@destroy');
 
 //Route::resource('stocks','StocksController',['only'=>['update']]);
